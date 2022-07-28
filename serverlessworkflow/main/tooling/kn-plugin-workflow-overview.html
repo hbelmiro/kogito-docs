@@ -138,7 +138,7 @@
     <span class="nav-text">Eventing</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../eventing/consume-producing-events-with-kafka.html">Consuming and producing events with Kafka</a>
+    <a class="nav-link" href="../eventing/consume-producing-events-with-kafka.html">Consuming and producing events using Apache Kafka</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../eventing/working-with-callbacks.html">Callbacks in Serverless Workflow</a>
@@ -169,6 +169,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../testing-and-troubleshooting/basic-integration-tests-with-restassured.html">Testing your Serverless Workflow application using REST Assured</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../testing-and-troubleshooting/integration-tests-with-postgresql.html">Serverless Workflow integration test using PostgreSQL</a>
   </li>
 </ul>
   </li>
@@ -309,7 +312,21 @@
 <li>
 <p>On Mac, add ownership to the root user as follows:</p>
 <div class="paragraph">
-<p><code>sudo chown root: /usr/local/bin/kn-workflow</code></p>
+<p><code>chmod +x /usr/local/bin/kn-workflow</code></p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Some systems might block the application to run due to Apple enforcing policies. To fix this problem, check the <strong>Security &amp; Privacy</strong> section in the <strong>System Preferences</strong> &#8594; <strong>General</strong> tab to approve the application to run. For more information, see <a href="https://support.apple.com/guide/mac-help/mh40616/mac">Apple support article: Open a Mac app from an unidentified developer</a>.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </li>
 <li>
