@@ -123,6 +123,9 @@ quarkus.rest-client.stock-service_API.url=http://localhost:8282/
 --
 
 [NOTE]
+Any non-alphanumeric character different from `\_` will be replaced by `_` in the config key.
+
+[NOTE]
 Kubernetes service endpoint can be used as a service URL if the target service is within the same cluster. Example: http://myservice.mynamespace.cluster.svc.local
 
 == Configuring OpenAPI services endpoints in different environments
