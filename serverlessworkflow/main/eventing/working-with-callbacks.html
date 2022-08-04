@@ -70,6 +70,9 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../getting-started/cncf-serverless-workflow-specification-support.html">CNCF Serverless Workflow specification</a>
   </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started/getting-familiar-with-our-tooling.html">Getting familiar with Serverless Workflow tooling</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
@@ -98,16 +101,13 @@
     <span class="nav-text">Tooling</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-overview.html">Serverless Workflow editor</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-chrome-extension.html">Chrome GitHub extension for Serverless Workflow editor</a>
   </li>
-  <li class="nav-item" data-depth="3">
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-vscode-extension.html">VS Code extension for Serverless Workflow editor</a>
   </li>
-</ul>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-chrome-extension.html">Chrome GitHub extension for Serverless Workflow editor</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -146,13 +146,16 @@
     <span class="nav-text">Eventing</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="handling-events-on-workflows.html">Event state in Serverless Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="consume-producing-events-with-kafka.html">Consuming and producing events using Apache Kafka</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="consume-produce-events-with-knative-eventing.html">Consuming and producing events on Knative Eventing</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="working-with-callbacks.html">Callbacks in Serverless Workflow</a>
+    <a class="nav-link" href="working-with-callbacks.html">Callback state in Serverless Workflow</a>
   </li>
 </ul>
   </li>
@@ -257,7 +260,7 @@
   <ul>
     <li><a href="../index.html">Kogito Serverless Workflow Guides</a></li>
     <li>Eventing</li>
-    <li><a href="working-with-callbacks.html">Callbacks in Serverless Workflow</a></li>
+    <li><a href="working-with-callbacks.html">Callback state in Serverless Workflow</a></li>
   </ul>
 </nav>
   <div class="edit-this-page"><a href="https://github.com/kiegroup/kogito-docs/edit/main/serverlessworkflow/modules/ROOT/pages/eventing/working-with-callbacks.adoc">Edit this Page</a></div>
@@ -277,7 +280,7 @@
 <p>From a Serverless Workflow perspective, asynchronous service indicates that the control is returned to the caller immediately without waiting for the action to be completed. Once the action is completed, a <a href="https://cloudevents.io/">CloudEvent</a> is published to resume the Serverless Workflow.</p>
 </div>
 <div class="paragraph">
-<p>For the Serverless Workflow to identify the published CloudEvent it is waiting for, the external service developer includes the process instance ID in the CloudEvent header or uses the <a href="#event-correlation-with-workflows">Serverless Workflow correlation mechanism</a>.</p>
+<p>For the Serverless Workflow to identify the published CloudEvent it is waiting for, the external service developer includes the process instance ID in the CloudEvent header or uses the <a href="event-correlation-with-workflows.html" class="xref page">Serverless Workflow correlation mechanism</a>.</p>
 </div>
 <div class="paragraph">
 <p>The Serverless Workflow correlation described in this document focuses on the former mechanism that is based on the fact that each Serverless Workflow instance contains a unique identifier, which is generated automatically.</p>
