@@ -61,6 +61,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../release_notes.html">Release notes for Serverless Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Getting Started</span>
 <ul class="nav-list">
@@ -90,6 +93,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../core/configuration-properties.html">Configuration properties in Serverless Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core/defining-an-input-schema-for-workflows.html">Input schema definition for Serverless Workflow</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../core/custom-functions-support.html">Custom functions for your Serverless Workflow service</a>
@@ -123,6 +129,27 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../tooling/kn-plugin-workflow-overview.html">Serverless Workflow plug-in for Knative CLI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/serverless-logic-web-tools/serverless-logic-web-tools-overview.html">Serverless Logic Web Tools</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/serverless-logic-web-tools/serverless-logic-web-tools-github-integration.html">Integrating your Serverless Workflow project in GitHub using Serverless Logic Web Tools</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/serverless-logic-web-tools/serverless-logic-web-tools-openshift-integration.html">Integrating your Serverless Workflow project with OpenShift using Serverless Logic Web Tools</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/serverless-logic-web-tools/serverless-logic-web-tools-redhat-application-services-integration.html">Integrating with Red Hat OpenShift Application and Data Services</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/serverless-logic-web-tools/serverless-logic-web-tools-deploy-projects.html">Deploying your Serverless Workflow projects using Serverless Logic Web Tools</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/serverless-logic-web-tools/serverless-logic-web-tools-enable-kogito-swf-visualization.html">Enabling Kogito Serverless Workflow Visualization in Serverless Logic Web Tools</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -211,12 +238,18 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../cloud/deploying-on-minikube.html">Deploying your Serverless Workflow application on Minikube</a>
   </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../cloud/kubernetes-service-discovery.html">Kubernetes service discovery in Serverless Workflow</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Integrations</span>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/expose-metrics-to-prometheus.html">Exposing workflow base metrics to Prometheus</a>
+  </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../integrations/serverless-dashboard-with-runtime-data.html">Displaying workflow data in dashboards</a>
   </li>
@@ -239,20 +272,29 @@
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">Kogito Serverless Workflow Guides</span>
-    <span class="version">main</span>
+    <span class="version">snapshot</span>
   </div>
   <ul class="components">
     <li class="component is-current">
-      <a class="title" href="../index.html">Kogito Serverless Workflow Guides</a>
+      <a class="title" href="../../latest/index.html">Kogito Serverless Workflow Guides</a>
       <ul class="versions">
-        <li class="version is-current is-latest">
-          <a href="../index.html">main</a>
+        <li class="version is-current">
+          <a href="../index.html">snapshot</a>
         </li>
         <li class="version">
-          <a href="../../1.25.0.Final/index.html">1.25.0.Final</a>
+          <a href="../../1.28.0-SNAPSHOT/index.html">1.28-RC</a>
+        </li>
+        <li class="version is-latest">
+          <a href="../../latest/index.html">1.27</a>
         </li>
         <li class="version">
-          <a href="../../1.24.1.Final/index.html">1.24.1.Final</a>
+          <a href="../../1.26.0.Final/index.html">1.26</a>
+        </li>
+        <li class="version">
+          <a href="../../1.25.0.Final/index.html">1.25</a>
+        </li>
+        <li class="version">
+          <a href="../../1.24.1.Final/index.html">1.24</a>
         </li>
       </ul>
     </li>
@@ -264,15 +306,18 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../index.html" class="home-link"></a>
+  <a href="../../latest/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
 </nav>
 <div class="page-versions">
-  <button class="version-menu-toggle" title="Show other versions of page">main</button>
+  <button class="version-menu-toggle" title="Show other versions of page">snapshot</button>
   <div class="version-menu">
-    <a class="version is-current" href="newsletter-subscription-example.html">main</a>
-    <a class="version" href="../../1.25.0.Final/use-cases/newsletter-subscription-example.html">1.25.0.Final</a>
-    <a class="version" href="../../1.24.1.Final/use-cases/newsletter-subscription-example.html">1.24.1.Final</a>
+    <a class="version is-current" href="newsletter-subscription-example.html">snapshot</a>
+    <a class="version" href="../../1.28.0-SNAPSHOT/use-cases/newsletter-subscription-example.html">1.28-RC</a>
+    <a class="version" href="../../latest/use-cases/newsletter-subscription-example.html">1.27</a>
+    <a class="version" href="../../1.26.0.Final/use-cases/newsletter-subscription-example.html">1.26</a>
+    <a class="version" href="../../1.25.0.Final/use-cases/newsletter-subscription-example.html">1.25</a>
+    <a class="version" href="../../1.24.1.Final/use-cases/newsletter-subscription-example.html">1.24</a>
   </div>
 </div>
   <div class="edit-this-page"><a href="https://github.com/kiegroup/kogito-docs/edit/main/serverlessworkflow/modules/ROOT/pages/use-cases/newsletter-subscription-example.adoc">Edit this Page</a></div>
